@@ -17,10 +17,12 @@
     <a href="/shows">More Venues</a><br />
     <a href="/homepage">Home</a><br />
     <a href="/">Log Out</a> <br />
+    {% if venue.host_id.id == user.id %}
+        <a href="/host/delete_venue/{{venue.id}}">Delete Venue</a>
+    {% endif %}
 
 
     {% if venue.host_id.id == user.id %}
-        <h1>TEST</h1>
         {% for musician in musicians %}
             {% for info in musician %}
                 <h1>***NEW BAND SUBMISSION***</h1>
