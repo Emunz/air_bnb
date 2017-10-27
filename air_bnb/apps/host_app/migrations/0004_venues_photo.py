@@ -7,9 +7,9 @@ from django.db import migrations, models
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('host_app', '0003_auto_20171025_1626'),
-    ]
+    # dependencies = [
+    #     ('host_app', '0003_auto_20171025_1626'),
+    # ]
 
     operations = [
         migrations.AddField(
