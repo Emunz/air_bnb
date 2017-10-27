@@ -44,10 +44,6 @@ def create_venue(request):
 
         return redirect('/shows')
 
-def delete_venue(request, venue_id):
-        Venues.objects.get(id=venue_id).delete()
-        return redirect('/shows')
-
 # def simple_upload(request):
 #     if request.method == 'POST' and request.FILES['myfile']:
 #         myfile = request.FILES['myfile']
